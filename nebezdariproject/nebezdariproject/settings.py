@@ -165,14 +165,20 @@ CKEDITOR_CONFIGS = {
 }
 
 # Email settings
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'mail.hosting.reg.ru'
-EMAIL_HOST_USER = 'noreply@nebezdari.ru'
-EMAIL_HOST_PASSWORD = '2B2x0H5o'
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'mail.hosting.reg.ru'
+# EMAIL_HOST_USER = 'noreply@nebezdari.ru'
+# EMAIL_HOST_PASSWORD = '2B2x0H5o'
 
-DEFAULT_FROM_EMAIL = 'noreply@nebezdari.ru'
-DEFAULT_TO_EMAIL = 'admin@nebezdari.ru'
+# DEFAULT_FROM_EMAIL = 'noreply@nebezdari.ru'
+# DEFAULT_TO_EMAIL = 'admin@nebezdari.ru'
+# EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
+EMAIL_HOST_USER = 'dendy36rus@gmail.com'
+EMAIL_HOST_PASSWORD = 'jxxaqrgfkyjbikfq'
 
 # reCAPTCHA settings
 RECAPTCHA_PUBLIC_KEY = '6Lf99a4UAAAAAJqUU5KZbT8Q6G-rZU1KZsa_SRqA'

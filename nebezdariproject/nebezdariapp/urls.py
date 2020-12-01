@@ -1,6 +1,6 @@
 from django.urls import path
 
-from nebezdariapp.old_views import AdminViews, AuthorViews, AuthViews, BlogViews, PostViews
+from nebezdariapp.views import AdminViews, AuthorViews, AuthViews, BlogViews, PostViews
 
 urlpatterns = [
     path('', BlogViews.index, name='index'),
