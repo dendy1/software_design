@@ -8,12 +8,18 @@ from nebezdariapp.models import Author, Post
 
 @staff_member_required
 def admin(request):
+    '''
+    Отвечает за рендер главной админ-стрницы.
+    '''
     return render(request,
                   'admin/admin-main-page.html',
                   context={})
 
 @staff_member_required
 def admin_user_add(request):
+    '''
+    Отвечает за добавление нового пользователя(автора).
+    '''
     if request.method == 'POST':
         form = NewAuthorForm(request.POST)
         if form.is_valid():
@@ -51,6 +57,9 @@ def admin_user_add(request):
 
 @staff_member_required
 def admin_authors(request):
+    '''
+    Рендерит страницу со списком всех авторов
+    '''
     author_list = Author.objects.filter(is_staff=False)
     return render(request,
                   'admin/admin-authors-page.html',
@@ -58,6 +67,9 @@ def admin_authors(request):
 
 @staff_member_required
 def admin_posts(request):
+    '''
+    Рендерит страницу со списком всех постов,
+    '''
     posts_list = Post.objects.all()
     return render(request,
                   'admin/admin-posts-page.html',
@@ -65,6 +77,10 @@ def admin_posts(request):
 
 @staff_member_required
 def admin_reset_password(request, username):
+    '''
+    Отвечает за восстановление утерянного пароля авторам. Включает в себя функционал отправки электронного письма на
+    на почту автора.
+    '''
     user = get_object_or_404(Author, username=username)
     password = Author.objects.make_random_password(length=10)
 
@@ -82,6 +98,9 @@ def admin_reset_password(request, username):
 
 @staff_member_required
 def admin_user_delete(request, username):
+    '''
+    Отвечает за удаление пользователя администраторомю
+    '''
     user = get_object_or_404(Author, username=username)
     Author.delete(user)
     return HttpResponseRedirect('/admin/users/')

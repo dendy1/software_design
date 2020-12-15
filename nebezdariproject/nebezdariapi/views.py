@@ -56,6 +56,6 @@ class MailingMemberViewSet(NestedViewSetMixin, viewsets.ModelViewSet):
     """
     ViewSet для управления логикой, связанной с подписчиками по E-Mail
     """
-    serializer_class = MailingMemberSerializer      #
+    serializer_class = MailingMemberSerializer
     queryset = MailingMember.objects.all()
-    filter_class = MailingMemberFilter              # Возможность фильтрации
+    filter_class = MailingMemberFilter

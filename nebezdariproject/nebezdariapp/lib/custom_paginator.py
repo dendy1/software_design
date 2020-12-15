@@ -2,13 +2,20 @@ from django.core.paginator import Paginator
 
 
 class CustomPaginator(Paginator):
+    '''
+    Класс, наследуемый от Paginator Django, отвечает за создание Pagination bar.
+    '''
     def __init__(self, object_list, per_page, pagination_pages_range, orphans=0,
                  allow_empty_first_page=True):
         super().__init__(object_list, per_page, orphans, allow_empty_first_page)
-        self.pagination_pages_range = pagination_pages_range  #count of pages right and left to the current page
+        self.pagination_pages_range = pagination_pages_range
         self.pagination_pages_totally = pagination_pages_range * 2 + 1  #count of pages in pagination bar totally
 
     def pagination_list(self, page_num):
+        '''
+        Создает соседей справа и слева, относительно текущей страницы. Количество зависит от
+        поля класса pagination_pages_range
+        '''
         pagination_list = []
         if self.num_pages <= self.pagination_pages_totally:
             for n in range(1, self.num_pages + 1):

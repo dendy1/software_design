@@ -7,6 +7,10 @@ from nebezdariapp.models import Post, Author
 
 
 def author(request):
+    '''
+    Отвечает за редирект пользователя на его страницу профиля, в зависимости от типа пользователя: администратора
+    или автора.
+    '''
     if request.user.is_authenticated:
         if request.user.is_staff:
             return HttpResponseRedirect('/admin/')
@@ -15,6 +19,9 @@ def author(request):
     raise Http404("Проверьте правильность пути")
 
 def author_page(request, username):
+    '''
+    Рендерит главную страницу автора.
+    '''
     author = get_object_or_404(Author, username=username)
     post_list = Post.objects.filter(author=author)
     return render(request,
@@ -25,6 +32,9 @@ def author_page(request, username):
 
 @login_required(login_url='/login')
 def author_edit(request, username):
+    '''
+    Отвечает за изменения личной информации автора.
+    '''
     if not request.user.is_staff and request.user.username != username:
         raise PermissionDenied
 

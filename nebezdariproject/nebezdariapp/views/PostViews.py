@@ -9,6 +9,9 @@ from nebezdariapp.models import Post, Comment
 
 
 def post(request, id):
+    '''
+    Рендерит страницу поста со все информацией, содержащейся в посте, а также с коментариями к этому посту.
+    '''
     post = get_object_or_404(Post, id=id)
     comments = post.comments.filter()
     related_posts = Post.objects.all()
@@ -34,6 +37,9 @@ def post(request, id):
                            'commentForm':commentForm})
 
 def delete_comment(request, post_id, comment_id):
+    '''
+    Отвечает за удаление комментария.
+    '''
     post = get_object_or_404(Post, id=post_id)
 
     if (request.user == post.author or request.user.is_staff):
@@ -45,6 +51,9 @@ def delete_comment(request, post_id, comment_id):
 
 @login_required(login_url='/login')
 def post_add(request):
+    '''
+    Отвечает за добавление нового поста.
+    '''
     if request.user.is_staff:
         raise PermissionDenied
 
@@ -70,6 +79,9 @@ def post_add(request):
 
 @login_required(login_url='/login')
 def post_edit(request, id):
+    '''
+    Отвечает за редактирование существующего поста.
+    '''
     post = get_object_or_404(Post, id=id)
     if request.user.username != post.author.username:
         raise PermissionDenied
@@ -92,6 +104,9 @@ def post_edit(request, id):
 
 @login_required(login_url='/login')
 def post_delete(request, id):
+    '''
+    Отвечает за удаление поста.
+    '''
     post = get_object_or_404(Post, id=id)
     if not request.user.is_staff or (post.author != None and request.user.username != post.author.username):
         raise PermissionDenied

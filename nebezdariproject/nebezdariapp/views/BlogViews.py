@@ -9,6 +9,10 @@ from nebezdariapp.models import Post, Category, MailingMember
 
 
 def index(request):
+    '''
+    Отвечает за рендеринг главной страницы со списком статей, разделенных пагинатором. В качестве GET параметра page
+    принимает номер страницы.
+    '''
     categories_form = CategoriesForm(request.GET)
     if request.method == 'GET':
         if categories_form.is_valid():
@@ -46,11 +50,17 @@ def index(request):
                            'categories_form': categories_form})
 
 def about(request):
+    '''
+    Рендерит страницу "О нас"
+    '''
     return render(request,
                   'blog/about-page.html',
                   context={})
 
 def contact(request):
+    '''
+    Рендерит страницу "Контакты"
+    '''
     if request.method == "POST":
         destination_mail = ["admin@nebezdari.ru", ]
         form = ContactForm(request.POST)
@@ -77,6 +87,9 @@ def contact(request):
                   context={"form": form})
 
 def subscribe(request):
+    '''
+    Отвечает за подписку пользователя на новостную раасылку.
+    '''
     if request.method == "POST":
         form = SubscribeForm(request.POST)
         if form.is_valid():

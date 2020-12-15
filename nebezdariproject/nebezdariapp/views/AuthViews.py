@@ -6,6 +6,9 @@ from nebezdariapp.forms import LoginForm
 
 
 def user_login(request):
+    '''
+    Отвечает за авторизацию пользователя.
+    '''
     if request.user.is_authenticated:
         if request.user.is_staff:
             return HttpResponseRedirect('/admin')
@@ -41,5 +44,8 @@ def user_login(request):
 
 @login_required(login_url='/login')
 def user_logout(request):
+    '''
+    Отвечает logout пользователя.
+    '''
     logout(request)
     return HttpResponseRedirect('/login')

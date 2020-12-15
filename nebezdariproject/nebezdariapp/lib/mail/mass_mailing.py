@@ -2,6 +2,9 @@ from ...models import MailingMember
 from django.core.mail import send_mass_mail
 
 def subscribers_mass_mail(message, link=""):
+    '''
+    Отвечает за массовую рассылку писем подписавшимся.
+    '''
     subcribers_list = []
     subcribers_list_model = MailingMember.objects.all()
     for subscriber in subcribers_list_model:
