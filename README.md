@@ -1,21 +1,8 @@
 # Публичный корпоративный блог - [nebezdari.ru](https://nebezdari.ru)
 ## Swagger-документация
-[API/v1](https://nebezdari.ru/api/v1/swagger/)
-## Видео с выступлением
-[YouTube](https://youtu.be/3OJwUZJnQJQ)  
-[GoogleDrive](https://drive.google.com/file/d/1Bpdup_ovngTtqZy_Osdl9rAQ5Ar_OFam/view)
+[API/v1/swagger/](https://nebezdari.ru/api/v1/swagger/)
 ## E-Mail для связи
 borodin_a_o@sc.vsu.ru
-## Данные для входа
-### Роль автора
-login: author  
-password: MazKzfksHT
-### Роль администратора
-login: admin  
-password: adminpassword
-### [Яндекс.Метрика](https://metrika.yandex.ru/dashboard?id=61840354)
-login: nebezdarianalytics  
-password: *yNA2N9WkmZ.tJW
 ## Ссылка на демо-видео
 [Google Drive](https://drive.google.com/file/d/1AmLJdMrwq3bVH_NeWNa3s1ljeOxUpWs_/view?usp=sharing)
 ## Ссылки на ТЗ
