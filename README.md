@@ -1,33 +1,10 @@
 # Публичный корпоративный блог - [nebezdari.ru](https://nebezdari.ru)
 ## Swagger-документация
-[API/v1](https://nebezdari.ru/api/v1/swagger/)
-## Видео с выступлением
-[YouTube](https://youtu.be/3OJwUZJnQJQ)  
-[GoogleDrive](https://drive.google.com/file/d/1Bpdup_ovngTtqZy_Osdl9rAQ5Ar_OFam/view)
+[API/v1/swagger/](https://nebezdari.ru/api/v1/swagger/)
 ## E-Mail для связи
 borodin_a_o@sc.vsu.ru
-## Данные для входа
-### Роль автора
-login: author  
-password: MazKzfksHT
-### Роль администратора
-login: admin  
-password: adminpassword
-### [Яндекс.Метрика](https://metrika.yandex.ru/dashboard?id=61840354)
-login: nebezdarianalytics  
-password: *yNA2N9WkmZ.tJW
 ## Ссылка на демо-видео
 [Google Drive](https://drive.google.com/file/d/1AmLJdMrwq3bVH_NeWNa3s1ljeOxUpWs_/view?usp=sharing)
-## Ссылки на ТЗ
-[GitHub PDF](https://github.com/dendy1/nebezdari-web/blob/master/Documentation/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.pdf)  
-[GitHub DOCX](https://github.com/dendy1/nebezdari-web/blob/master/Documentation/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.docx)  
-[Google Drive](https://drive.google.com/file/d/1oY4O2cllD_YvFf6duvnjsTf1rw3fkYBQ/view)
-## Ссылки на Курсовой проект
-[GitHub PDF](https://github.com/dendy1/nebezdari-web/blob/master/Documentation/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82/nebezdari.ru%20%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82.pdf)  
-[GitHub DOCX](https://github.com/dendy1/nebezdari-web/blob/master/Documentation/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82/nebezdari.ru%20%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82.docx)  
-## Распределение ролей
-[GitHub PDF](https://github.com/dendy1/nebezdari-web/blob/master/Documentation/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%BE%D0%BB%D0%B5%D0%B9.pdf)  
-[GitHub DOCX](https://github.com/dendy1/nebezdari-web/blob/master/Documentation/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%BE%D0%BB%D0%B5%D0%B9.docx)  
 ## Доска на Trello
 https://trello.com/b/hzlg8baz/nebezdari-web
 ## Доска на Miro
